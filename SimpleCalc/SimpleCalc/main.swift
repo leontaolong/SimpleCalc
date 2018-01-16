@@ -1,4 +1,4 @@
-//
+//  Leon Long
 //  main.swift
 //  SimpleCalc
 //
@@ -36,7 +36,7 @@ public class Calculator {
         case "%":
             return Int(args[0])! % Int(args[2])!
         default:
-            return nilHandleErr
+            return -1
         }
     }
     
@@ -60,9 +60,9 @@ public class Calculator {
             if let num = num { // assertion
                 return getFactorial(num)
             }
-            return nilHandleErr
+            return -1
         default:
-            return nilHandleErr
+            return -1
         }
     }
     
